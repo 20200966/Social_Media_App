@@ -37,6 +37,14 @@ class LoginPage extends StatelessWidget {
                 obscureText: false,
                 controller: emailController,
               ),
+
+              //password input
+              MyTextField(
+                hintText: "",
+                obscureText: true,
+                controller: passwordController,
+              ),
+
             ],
           ),
         ),
