@@ -4,8 +4,12 @@
 
 // clang-format off
 
-#include "generated_plugin_registrant.h"
+#ifndef GENERATED_PLUGIN_REGISTRANT_
+#define GENERATED_PLUGIN_REGISTRANT_
 
+#include <flutter/plugin_registry.h>
 
-void RegisterPlugins(flutter::PluginRegistry* registry) {
-}
+// Registers Flutter plugins.
+void RegisterPlugins(flutter::PluginRegistry* registry);
+
+#endif  // GENERATED_PLUGIN_REGISTRANT_
