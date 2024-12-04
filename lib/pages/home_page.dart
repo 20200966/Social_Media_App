@@ -13,7 +13,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Home"),
-      backgroundColor: Colors.deepOrange,
+      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      elevation: 0,
       actions: [
         //logout button
         IconButton(
@@ -22,6 +23,7 @@ class HomePage extends StatelessWidget {
         )
       ]
       ),
+      drawer: Drawer(),
     );
   }
 }
