@@ -4,12 +4,14 @@
 
 // clang-format off
 
-#ifndef GENERATED_PLUGIN_REGISTRANT_
-#define GENERATED_PLUGIN_REGISTRANT_
+#include "generated_plugin_registrant.h"
 
-#include <flutter/plugin_registry.h>
+#include <firebase_auth/firebase_auth_plugin_c_api.h>
+#include <firebase_core/firebase_core_plugin_c_api.h>
 
-// Registers Flutter plugins.
-void RegisterPlugins(flutter::PluginRegistry* registry);
-
-#endif  // GENERATED_PLUGIN_REGISTRANT_
+void RegisterPlugins(flutter::PluginRegistry* registry) {
+  FirebaseAuthPluginCApiRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FirebaseAuthPluginCApi"));
+  FirebaseCorePluginCApiRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FirebaseCorePluginCApi"));
+}
