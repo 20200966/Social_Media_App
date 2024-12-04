@@ -87,7 +87,7 @@ class LoginPage extends StatelessWidget {
                   GestureDetector(
                     onTap: () {},
                     child: const Text(
-                      "Register here",
+                      "  Register here",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                       ),
