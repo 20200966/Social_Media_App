@@ -8,8 +8,10 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.surface,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          DrawerHeader(
+          Column(children: [
+            DrawerHeader(
             child: Icon(
               Icons.favorite,
               color: Theme.of(context).colorScheme.inversePrimary,
@@ -55,6 +57,22 @@ class MyDrawer extends StatelessWidget {
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
               title: Text("USERS"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ),
+        ],
+      ),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 25.0, bottom: 25),
+            child: ListTile(
+              leading: Icon(
+                Icons.home,
+                color: Theme.of(context).colorScheme.inversePrimary,
+              ),
+              title: const Text("LOGOUT"),
               onTap: () {
                 Navigator.pop(context);
               },
