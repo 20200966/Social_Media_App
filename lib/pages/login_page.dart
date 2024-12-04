@@ -47,6 +47,20 @@ class LoginPage extends StatelessWidget {
                 controller: passwordController,
               ),
 
+              const SizedBox(height: 10),
+
+              //forgot password
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    "Forgot Password",
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.secondary)
+                    ),
+                ],
+              )
+
             ],
           ),
         ),
