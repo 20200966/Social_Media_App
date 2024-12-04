@@ -1,7 +1,13 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
+
+  //logout
+  void logout() {
+    FirebaseAuth.instance.signOut();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +34,13 @@ class MyDrawer extends StatelessWidget {
                 Icons.home,
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
-              title: Text("HOME"),
+              title: const Text("HOME"),
               onTap: () {
+                //pop drawer
                 Navigator.pop(context);
+
+                //navigate to home page
+                Navigator.pushNamed(context, '/home_page');
               },
             ),
           ),
@@ -42,9 +52,13 @@ class MyDrawer extends StatelessWidget {
                 Icons.person,
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
-              title: Text("PROFILE"),
+              title: const Text("PROFILE"),
               onTap: () {
+                //pop drawer
                 Navigator.pop(context);
+
+                //navigate to profile page
+                Navigator.pushNamed(context, '/profile_page');
               },
             ),
           ),
@@ -56,9 +70,13 @@ class MyDrawer extends StatelessWidget {
                 Icons.group,
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
-              title: Text("USERS"),
+              title: const Text("USERS"),
               onTap: () {
+                //pop drawer
                 Navigator.pop(context);
+
+                //navigate to users page
+                Navigator.pushNamed(context, '/users_page');
               },
             ),
           ),
@@ -75,6 +93,9 @@ class MyDrawer extends StatelessWidget {
               title: const Text("LOGOUT"),
               onTap: () {
                 Navigator.pop(context);
+
+                //logout
+                logout();
               },
             ),
           ),
