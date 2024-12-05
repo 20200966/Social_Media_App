@@ -1,18 +1,16 @@
-# social
+# **Social_Media_App** 🌟
 
-A new Flutter project about a mini Social Media App.
+Social_Media_App is a lightweight mobile social media application built with Flutter. It replicates the core functionalities of modern social platforms, allowing users to connect and share.
 
-Juan Manuel Flores - 2020-0966
+## **Main Features** 🚀
+- **User Authentication**: Secure login and sign-up using Firebase.
+- **Create and Share Posts**: Upload images and share them with others.
+- **Engage with Content**: Comment on posts.
+- **Profile Management**: View and edit personal profiles.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## **Technologies Used** 🛠️
+- **Flutter**: Powerful cross-platform framework for building mobile apps.
+- **Dart**: Primary programming language for Flutter.
+- **Firebase**: Back-end services for authentication and cloud storage.
+- **Flutter ScreenUtil**: Ensures a responsive design for devices of all sizes.
+- **Additional Packages**: Refer to pubspec.yaml for a complete list of dependencies.
