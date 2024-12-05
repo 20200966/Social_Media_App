@@ -1,6 +1,8 @@
 # social
 
-A new Flutter project.
+A new Flutter project about a mini Social Media App.
+
+Juan Manuel Flores - 2020-0966
 
 ## Getting Started
 
