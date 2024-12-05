@@ -91,7 +91,7 @@ class _RegisterPageState extends State<RegisterPage> {
               ),
           
               const Text(
-                "M I N I M A L",
+                "JF'S S O C I A L",
                 style: TextStyle(fontSize: 20),
               ),
           
