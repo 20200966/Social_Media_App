@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social/components/my_drawer.dart';
+import 'package:social/components/my_post_button.dart';
 import 'package:social/components/my_textfield.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,10 +22,22 @@ class HomePage extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(25),
-            child: MyTextField(
-              hintText: "Say something...",
-              obscureText: false,
-              controller: newPostController,
+            child: Row(
+              children: [
+                //textfield
+                Expanded(
+                  child: MyTextField(
+                    hintText: "Say something...",
+                    obscureText: false,
+                    controller: newPostController,
+                  ),
+                ),
+
+                //post button
+                PostButton(
+                  onTap: () {} 
+                  )
+              ],
             ),
           )
         ],
