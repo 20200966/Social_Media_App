@@ -48,6 +48,8 @@ class ProfilePage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  
+                  //user profile picture
                   Container(
                     decoration: BoxDecoration(
                       color: Theme.of(context).colorScheme.primary,
